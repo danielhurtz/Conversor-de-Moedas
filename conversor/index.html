@@ -1,0 +1,42 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cotacaoAtual">
+        <marquee><b>COTACAO ATUAL -></b> Dolar: R$5,00 | Euro: R$5,50 | Libra:R$6,60 | Bitcoin: R$210.000,00</marquee>
+    </div><br></br>
+    <div class="titulo">
+        <h1 class="page-title">
+            MOEDA FIAT E CRIPTO
+        </h1>
+    </div>
+    <div class="container">
+        <br></br>
+
+        <p><label for="moeda">CONVERSOR PARA REAL</label></p>
+        <br></br>
+        <p2>Selecione a Moeda</p2>
+        <select name="moeda" id="moeda" class='select' required>
+            <option value="usd">U$ - Dolar</option>
+            <option value="eur">€ - Euro</option>
+            <option value="lib">£ - Libra</option>
+            <option value="btc">₿ - Bitcoin</option>
+        </select>
+        <input type="number" id="valor" size="2" placeholder='Digite um valor' required><br>
+        <span><button type="submit" onclick="Converter()">Converter</button></span>
+        <h2 id="resultado"></h2>
+        <footer>
+            <p>&copy; <strong>2022 danielhurtz</strong> </p>
+        </footer>
+        <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: serif;
+    height: 100hv;
+    background-image: url("https://images7.alphacoders.com/721/721735.jpg");
+    background-size: auto;
+    background-position: center;
+    justify-content: center;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 25px;
+}
+
+.cotacaoAtual {
+    font-weight: bolder;
+    font: 22px Courier;
+    text-shadow: 0.1em 0.1em #6e7c7657;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    min-height: 50vh;
+    min-width: 100vw;
+    font-size: x-large;
+    font-family: monospace;
+    background: linear-gradient(to bottom right,
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.05));
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5), -1px -1px 2px #aaa,
+        1px 1px 2px #555;
+    backdrop-filter: blur(0.8rem);
+    padding: 1rem;
+    border-radius: 1rem;
+    animation: 1s cubic-bezier(0.16, 1, 0.3, 1) cardEnter;
+}
+
+.select {
+    background: none;
+    border: 1px solid rgba(8, 8, 8, 0.25);
+}
+
+.page-title {
+    color: #139755;
+    margin: 0 0 10px;
+    text-shadow: 0.1em 0.1em rgb(6, 48, 22);
+}
+
+.page-logo {
+    width: 200px;
+}
+
+input {
+    margin: 12px;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+label {
+    color: rgb(238, 205, 18);
+    font-size: 30px;
+    font-family: fantasy, monospace;
+    text-shadow: 0.1em 0.1em rgb(75, 74, 9);
+}
+
+button {
+    margin-top: 12px;
+    padding: 8px 10px;
+    font-family: "Courier New", Courier monospace;
+    color: goldenrod;
+    font-size: 22px;
+    border-radius: 12px;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgb(33, 168, 105));
+}
+
+button:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to bottom, rgb(43, 206, 92), rgb(45, 49, 46));
+}
+
+h2 {
+    padding: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    color: darkblue;
+}
+
+@keyframes cardEnter {
+    from {
+        transform: translateY(100vh);
+        opacity: 0.1;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
